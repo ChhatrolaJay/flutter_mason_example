@@ -34,3 +34,16 @@ vars:
     description: search cubit
     default: searchCubit
     prompt: Provide name of search cubit
+
+  author:
+    type: string
+    description: search cubit
+    default: searchCubit
+    prompt: Provide author name-
+
+  erId:
+    type: string
+    description: search cubit
+    default: searchCubit
+    prompt: Provide er id-    
+    
