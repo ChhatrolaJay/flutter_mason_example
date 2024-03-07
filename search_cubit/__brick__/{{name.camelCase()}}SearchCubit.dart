@@ -16,9 +16,10 @@
 ///
 ///File Name: {{name.camelCase}}SearchCubit
 ///
-///@author Jay Chhatrola (jayc@meditab.com) Meditab Software Inc.
+///@author {{author}} Meditab Software Inc.
+///ER-Id: {{erId}}
 ///@version 1.0.0
-///@since 05/03/24 4:46 PM
+///
 ///
 
 import 'package:flutter_bloc/flutter_bloc.dart';
