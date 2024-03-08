@@ -21,18 +21,14 @@
 ///@version 1.0.0
 ///
 ///
-
-
-part of '{{name.camelCase()}}SearchCubit.dart';
+part of '{{name.camelCase()}}_search_cubit.dart';
 
 abstract class SearchState {}
 
 class SearchEmpty extends SearchState {}
 
 class SearchFound extends SearchState {
-  final String query;
-
-  SearchFound(this.query);
+  /// add your list in the constructor of this state in order to access it.
 }
 
 class SearchNotFound extends SearchState {}
