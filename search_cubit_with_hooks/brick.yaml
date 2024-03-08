@@ -1,4 +1,4 @@
-name: search_cubit
+name: search_cubit_with_hooks
 description: A new brick created with the Mason CLI.
 
 # The following defines the brick repository url.
@@ -15,9 +15,6 @@ version: 0.1.0+1
 environment:
   mason: ">=0.1.0-dev.50 <0.1.0"
 
-
-
-
 # Variables specify dynamic values that your brick depends on.
 # Zero or more variables can be specified for a given brick.
 # Each variable has:
@@ -31,18 +28,12 @@ environment:
 vars:
   name:
     type: string
-    description: search cubit
-    default: searchCubit
-    prompt: Provide name of search cubit-
+    description: Your name
+    default: Dash
+    prompt: Provide a name of a search cubit?
 
-  author:
+  path:
     type: string
-    description: search cubit
-    default: searchCubit
-    prompt: Provide author name-
-
-  erId:
-    type: string
-    description: search cubit
-    default: searchCubit
-    prompt: Provide er id-
+    description: Your name
+    default: Dash
+    prompt: Provide a path to install required packages-

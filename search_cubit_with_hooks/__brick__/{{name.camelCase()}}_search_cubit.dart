@@ -14,16 +14,17 @@
 ///is strictly forbidden unless prior written permission is obtained
 ///from Meditab Software Incorporated.
 ///
-///File Name: SearchCubit
+///File Name: {{name.camelCase}}SearchCubit
 ///
-///@author Jay Chhatrola (jayc@meditab.com) Meditab Software Inc.
+///@author {{author}} Meditab Software Inc.
+///ER-Id: {{erId}}
 ///@version 1.0.0
-///@since 05/03/24 4:46 PM
+///
 ///
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-part 'patientSearchState.dart';
+part '{{name.camelCase()}}_search_state.dart';
 
 class SearchCubit extends Cubit<SearchState> {
   SearchCubit() : super(SearchEmpty());
@@ -31,10 +32,23 @@ class SearchCubit extends Cubit<SearchState> {
   void search(String query) {
     // Implement search functionality here
     // Emit Found or NotFound states based on search result
+    // logic code for search function:-
+
+    ///[Logic] -
+    /// _searchSampleList = _sampleList.where((element) {
+    ///   return element.name?.toLowerCase().contains(query) ?? false;
+    /// }).toList();
+    /// _searchSampleList.isNotEmpty ?
+    /// emit(SearchFound(
+    ///     sampleList: _searchSampleList)) : emit(SearchNotFound());
   }
 
   void clearSearch() {
     // Implement method to clear search
+
+    /// _searchSampleList.clear();
+    /// emit(SearchFound(
+    ///     sampleList: _searchSampleList));
     emit(SearchEmpty());
   }
 }

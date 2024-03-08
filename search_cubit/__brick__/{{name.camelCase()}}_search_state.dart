@@ -16,22 +16,19 @@
 ///
 ///File Name: {{name.camelCase}}SearchState
 ///
-///@author Jay Chhatrola (jayc@meditab.com) Meditab Software Inc.
+///@author {{author}} Meditab Software Inc.
+///ER-Id: {{erId}}
 ///@version 1.0.0
-///@since 05/03/24 4:46 PM
 ///
 
-
-part of '{{name.camelCase()}}SearchCubit.dart';
+part of '{{name.camelCase()}}_search_cubit.dart';
 
 abstract class SearchState {}
 
 class SearchEmpty extends SearchState {}
 
 class SearchFound extends SearchState {
-  final String query;
-
-  SearchFound(this.query);
+  /// add your list in the constructor of this state in order to access it.
 }
 
 class SearchNotFound extends SearchState {}
