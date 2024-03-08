@@ -32,6 +32,18 @@ vars:
     default: Dash
     prompt: Provide a name of a search cubit?
 
+  author:
+    type: string
+    description: search cubit
+    default: searchCubit
+    prompt: Provide author name-
+
+  erId:
+    type: string
+    description: search cubit
+    default: searchCubit
+    prompt: Provide er id-
+
   path:
     type: string
     description: Your name
