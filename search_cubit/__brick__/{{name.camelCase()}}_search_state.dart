@@ -20,7 +20,7 @@
 ///ER-Id: {{erId}}
 ///@version 1.0.0
 ///
-
+///
 part of '{{name.camelCase()}}_search_cubit.dart';
 
 abstract class SearchState {}
